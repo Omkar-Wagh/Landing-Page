@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="Landing_page.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="img/logo1.jpg" class="logo" alt="Logo">
+        <ul>
+            <li><a href="Landing_page.html">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="banner">
+        <h1>UCC TECH LIMITED</h1>
+        <h2>Innovating Solutions for a Digital Future<br>
+        Your Online Service Provider</h2>
+        <div class="wave"></div>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+    </div>
+        <div class="block1" id="about">
+            <h1><b>About Us</b></h1>
+            <h3>We make creativity work for your brand!<br>
+                Ours is a team of creatives that is brainstorming on great ideas, all. the. time.<br>
+                With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</h3>
+            <button onclick="window.location.href='#'"><span></span>MORE</button>
+        </div>
+    <div class="container" id="services">
+            <h1><b>Our Services</b></h1>
+            <h3>We make creativity work for your brand!<br>
+                Ours is a team of creatives that is brainstorming on great ideas, all. the. time.<br>
+                With our skills put together, you get an ensemble capable of doing anything and everything your brand needs.</h3>
+    <div class="box-container">
+        <div class="box1">
+            <h3>Online Services</h3>
+            <p>Custom Software Development</p>
+            <p>System Integration Services</p>
+            <p>Real-Time System Development</p>
+            <p>Performance Optimization</p>
+            <p>Cybersecurity Services</p>
+        </div>
+        <div class="box2">
+            <h2>Internships</h2>
+            <p>Software Development Intern</p>
+            <p>Embedded Systems Intern</p>
+            <p>C/C++ Development Intern</p>
+            <p>System Programming Intern</p>
+            <p>Junior C Developer Intern</p>
+        </div>
+        <div class="box3">
+            <h2>Online Courses</h2>
+            <p>Course Title: Masterclass in C Programming</p>
+            <p>C Programming Fundamentals</p>
+            <p>GUI using C Programming</p>
+            <p>WIN32 Framework Basics</p>
+            <p>Debugging and Testing</p>
+        </div>
+    </div>
+</div>
+    <div class="box-container-logo">
+        <hr class="styled-hr">
+        <h2>Some of Our Clients</h2>
+        <hr class="styled-hr">
+        <img src="img/logo2.png" class="logo2" alt="Logo">
+        <img src="img/logo3.png" class="logo2" alt="Logo">
+        <img src="img/logo4.png" class="logo2" alt="Logo">
+        <img src="img/logo5.png" class="logo2" alt="Logo">
+        <img src="img/logo6.png" class="logo2" alt="Logo">
+        <img src="img/logo7.png" class="logo2" alt="Logo">
+        <img src="img/logo8.png" class="logo2" alt="Logo">
+        <hr class="styled-hr">
+    </div>
+
+    <div class="footer" id="contact">
+        <ul>
+            <li>Contact Us</li>
+            <li>Email: contact@example.com</li>
+            <li>Phone: +123 456 7890</li>
+            <li>Address: 1234 Street Name, City, Country</li>
+        </ul>
+    </div>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    </script>
+</body>
+</html>

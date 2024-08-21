@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 2px 2dvi rgb(70, 67, 67);
+}
+
+.navbar ul {
+    margin-right: 2rem;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+    letter-spacing: 1px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: url(img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.banner h1 {
+    margin-top: 10vh;
+    font-size: 5vw;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 2.5vw; 
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.banner .wave {
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    width: 100%;
+    background: url(img/img2.png);
+    background-size: 100rem 11rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+}
+
+.banner .wave2 {
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+}
+
+.banner .wave3 {
+    animation-duration: 4s;
+    opacity: .5;
+}
+
+@keyframes waves {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100rem;
+    }
+}
+
+.footer {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-evenly;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.footer ul {
+    margin: 0;
+    color: #fff;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer ul li {
+    letter-spacing: 1px;
+    margin: 10px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.navbar .logo {
+    margin-left: 10px;
+}
+
+.logo {
+    width: 70px;
+    cursor: pointer;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    background-color: #ffff;
+    flex-wrap: wrap;
+}
+
+.block1, .block2 {
+    flex: 1 1 50%;
+    text-align: center;
+    height: auto;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.block1 {
+    background-color: #fff;
+    color: rgb(73, 69, 69);
+}
+
+.block1 p {
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+.block2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #11a4b4;
+}
+
+.block2 p {
+    color: #ffff;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 15px;
+    background-color: #f2f2f2;
+}
+
+.box-container {
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.logo1 {
+    margin-top: 15px;
+    float: left;
+    width: 30px;
+    cursor: pointer;
+}
+
+.box-container-logo {
+    width: 100%;
+    text-align: center;
+    justify-content: space-between;
+    min-height: 250px;
+    margin-bottom: 15px;
+}
+
+.logo2 {
+    width: 150px;
+    height: 120px;
+    margin-left: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.box1, .box2, .box3 {
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px;
+    min-height: 300px;
+    flex: 1;
+    border-radius: 15px;
+    box-shadow: 0 4px 4px rgb(70, 67, 67);
+}
+
+.box1 {
+    background-color: rgb(8, 119, 101);
+}
+
+.box2 {
+    background-color: rgb(10, 84, 104);
+}
+
+.box3 {
+    background-color: rgb(9, 180, 223);
+}
+
+.bulleted-heading::before {
+    content: "•";
+    margin-right: 10px;
+}
+
+.bulleted-heading-head::before {
+    content: ">";
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box {
+    flex: 1;
+    padding: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2dvi rgb(70, 67, 67);
+}
+
+.box h2 {
+    letter-spacing: 1px;
+}
+
+.box p {
+    padding-left: 20px;
+    padding-right: 20px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+Button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border: 3px solid #b41471;
+    background: #b41471;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.styled-hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        margin-right: 1rem;
+    }
+
+    .navbar ul li {
+        margin: 0 5px;
+    }
+
+    .navbar .logo {
+        margin-left: 5px;
+    }
+
+    .banner h1 {
+        margin-top: 20px;
+        font-size: 8vw;
+    }
+
+    .banner h2 {
+        font-size: 4vw;
+    }
+
+    .footer ul li {
+        margin: 5px;
+    }
+
+    .box-container {
+        gap: 10px;
+    }
+
+    .box {
+        padding: 10px;
+    }
+
+    .box p {
+        font-size: 0.9rem;
+    }
+
+    Button {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+}
